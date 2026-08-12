@@ -1,0 +1,66 @@
+:root {
+  --color-bg: #062B2C;
+  --color-bg-secondary: #0B3A36;
+  --color-card: #114B43;
+  --color-green: #0FA958;
+  --color-green-light: #18C964;
+  --color-white: #FFFFFF;
+  --color-text: #D8D8D8;
+  --color-muted: #9AA5A7;
+  --color-border: rgba(255, 255, 255, 0.08);
+
+  --color-danger: #E4685D;
+  --color-danger-bg: rgba(228, 104, 93, 0.14);
+  --color-warning: #E0A855;
+  --color-warning-bg: rgba(224, 168, 85, 0.14);
+  --color-info: #55A8E0;
+  --color-info-bg: rgba(85, 168, 224, 0.14);
+  --color-success: var(--color-green-light);
+  --color-success-bg: rgba(24, 201, 100, 0.14);
+
+  --radius: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --color-text-muted: var(--color-muted);
+  --color-accent: var(--color-green-light);
+  --color-surface: var(--color-bg-secondary);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-bg);
+  background-image:
+    radial-gradient(600px circle at 15% 0%, rgba(15, 169, 88, 0.20), transparent 60%),
+    radial-gradient(500px circle at 90% 20%, rgba(24, 201, 100, 0.12), transparent 55%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4 {
+  color: var(--color-white);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+p {
+  color: var(--color-muted);
+}
+
+a {
+  color: var(--color-green-light);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
